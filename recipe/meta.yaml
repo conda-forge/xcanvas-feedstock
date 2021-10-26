@@ -1,5 +1,5 @@
 {% set name = "xcanvas" %}
-{% set version = "0.2.0" %}
+{% set version = "0.2.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/martinRenou/{{ name }}/archive/{{ version }}.tar.gz
-  sha256: 71285f1d4c26bd93bc7aa3fef2c6f10a452af2ca308e7bc89ffd762d5f418899
+  sha256: 4e84934d023aea524545f23de33a00a92f2db5802e3e15951055a4c31d551ce7
 
 build:
   number: 0
