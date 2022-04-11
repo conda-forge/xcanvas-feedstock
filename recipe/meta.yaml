@@ -1,5 +1,5 @@
 {% set name = "xcanvas" %}
-{% set version = "0.2.2" %}
+{% set version = "0.2.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/martinRenou/{{ name }}/archive/{{ version }}.tar.gz
-  sha256: 81c9aa15ae7a94733bc4cf030ce82c181d796f22e411e72f218c1db06d8d7b4b
+  sha256: ec7ad2265c25c8c0a785e36099bfea3f6804484f4c3b50c82f1dbfb269f74e68
 
 build:
   number: 1
@@ -26,7 +26,7 @@ requirements:
     - xproperty >=0.11.0,<0.12
     - xwidgets >=0.26.0,<0.27
   run:
-    - ipycanvas >=0.9.1,<0.10
+    - ipycanvas >=0.11.0,<0.12
 
 test:
   commands:
