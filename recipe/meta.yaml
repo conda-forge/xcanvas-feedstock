@@ -1,5 +1,5 @@
 {% set name = "xcanvas" %}
-{% set version = "0.2.3" %}
+{% set version = "0.3.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://github.com/martinRenou/{{ name }}/archive/{{ version }}.tar.gz
-  sha256: ec7ad2265c25c8c0a785e36099bfea3f6804484f4c3b50c82f1dbfb269f74e68
+  sha256: 6b9f1a0e5bddb6a5f63ab3991ee7e7d46509d36632c69bde83c0fb9ffbf3799b
 
 build:
-  number: 1
+  number: 0
   skip: true  # [win and vc<14]
   run_exports:
     - {{ pin_subpackage(name, max_pin='x.x') }}
@@ -21,10 +21,10 @@ requirements:
     - cmake
     - make  # [unix]
   host:
-    - xeus >=2.0.0,<3.0
+    - xeus-zmq >=1.0.1,<2.0
     - xtl >=0.7.0,<0.8
     - xproperty >=0.11.0,<0.12
-    - xwidgets >=0.26.0,<0.27
+    - xwidgets >=0.27.0,<0.28
   run:
     - ipycanvas >=0.11.0,<0.12
 
