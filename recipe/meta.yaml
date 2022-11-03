@@ -1,5 +1,5 @@
 {% set name = "xcanvas" %}
-{% set version = "0.3.0" %}
+{% set version = "0.4.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/martinRenou/{{ name }}/archive/{{ version }}.tar.gz
-  sha256: 6b9f1a0e5bddb6a5f63ab3991ee7e7d46509d36632c69bde83c0fb9ffbf3799b
+  sha256: 5744e8a7264e307baa771f1f662d21a846fc2d69e6226e43f7fe7f63791a6290
 
 build:
   number: 0
@@ -43,7 +43,7 @@ about:
   license: BSD-3-Clause
   license_family: BSD
   license_file: LICENSE
-  summary: 'C++ back-end for ipycanvas'
+  summary: C++ back-end for ipycanvas
   dev_url: https://github.com/martinRenou/xcanvas
 
 extra:
