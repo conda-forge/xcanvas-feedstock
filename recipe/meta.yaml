@@ -1,5 +1,5 @@
 {% set name = "xcanvas" %}
-{% set version = "0.5.0" %}
+{% set version = "0.5.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/jupyter-xeus/xcanvas/archive/{{ version }}.tar.gz
-  sha256: 6154f72dca8542ca738ad71e57ffe441f49cdd7f157dcb0a877170971a0fbd43
+  sha256: 08ca0adc86cfd4e326c0541eea293392f256d715e6ad8b143dbaf64773338f8a
 
 build:
   number: 0
